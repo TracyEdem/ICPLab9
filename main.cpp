@@ -39,7 +39,6 @@ void searchValidEntries(int leftupperx, int leftuppery, int rightlowerx, int rig
 
 int main()
 {
-    int i,j;
     int A[101][101];
 
 
