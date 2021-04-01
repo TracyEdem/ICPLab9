@@ -9,7 +9,6 @@ void populateArray(int A[101][101],int N){
     while(N>0){
        int i = rand() % 100;
        int j = rand() % 100;
-       cout<<2000-N<<" "<<i<<" "<<j<<" , "<<endl;
        if(A[i][j]==-1){
          A[i][j]=1;
        }
@@ -27,6 +26,7 @@ void populateArray(int A[101][101],int N){
 
 
 void searchValidEntries(int leftupperx, int leftuppery, int rightlowerx, int rightlowery,int A[101][101]){
+    cout<<"For the bounding boxes "<<leftupperx<<","<<leftuppery<<","<<rightlowerx<<","<<rightlowery<<":"<<endl;
     for(int i=leftupperx; i<=(rightlowerx+1);i++){
             for(int j=leftuppery; j<=(rightlowery+1);j++){
                 if(A[i][j]>0 && A[i][j]<2000){
@@ -44,21 +44,11 @@ int main()
 
 
     populateArray(A,2000);
+    searchValidEntries(80, 1, 100, 10,A);
+    searchValidEntries(10, 20, 40, 79,A);
+    searchValidEntries(1, 90, 100, 100,A);
+    searchValidEntries(40, 30, 70, 60,A);
+    searchValidEntries(50, 50, 70, 70,A);
 
-    int counter=0;
-    for(i=0;i<101;i++){
-        for(j=0;j<101;j++){
-            if(A[i][j]>=1 && A[i][j]<2000){
-                cout<<"("<<i<<","<<j<<")"<<" "<<A[i][j]<<" , ";
-                counter++;
-            }
-        }
-    }
-
-
-    cout<<"\n"<<counter;
-    cout<<"\n";
-
-    searchValidEntries(96,38,100,85,A);
     return 0;
 }
