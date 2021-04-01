@@ -1,0 +1,152 @@
+SHORT DESCRIPTION OF OUR CODE
+ We declared and initialized our arrays. We filled the array using the populateArray function and found the elements within the bounding boxes using the searchValidEntries function.
+
+1.	PopulateArray function
+Create function 
+Pass in the arguments array and N
+   Declare function srand
+   While N is greater than zero,
+         		Generate random values from 0 to 100 for integers I and j
+   	            If element at the index i and j of the 2-D array is -1,
+			Assign the value -1 to that index
+	 	Else if the element at the index is greater than or equal to 1,
+			Increase the value by 1
+		Else 
+			Set the value to -1
+		Decrease N by -1
+	  End while
+        End function
+
+2, SearchValidEntries Function
+Create function and pass the x and y corner coordinates and array     FOR integer i= upper left x coordinate and i= lowerright x coordinate + 1         FOR integer j= upper left y coordinate and             IF array element is between 0 and 2000                display row and column index and element at given index
+           END IF
+       END FOR
+    END FOR
+END
+THE BOUNDING BOXES AND THEIR VALUES:
+For the bounding boxes 80,1,100,10:
+i , j ; 24
+i , j ; 64
+i , j ; 256
+i , j ; 256
+i , j ; 1
+i , j ; 512
+i , j ; 1
+i , j ; 230
+i , j ; 127
+i , j ; 1928
+i , j ; 127
+i , j ; 127
+i , j ; 127
+i , j ; 127
+i , j ; 127
+i , j ; 127
+i , j ; 16
+i , j ; 127
+i , j ; 3
+i , j ; 1
+i , j ; 129
+i , j ; 676
+i , j ; 1
+i , j ; 59
+i , j ; 128
+i , j ; 128
+i , j ; 1
+i , j ; 3
+i , j ; 6
+i , j ; 2
+i , j ; 1
+For the bounding boxes 10,20,40,79:
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 2
+i , j ; 2
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 2
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 2
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 2
+i , j ; 1
+i , j ; 1
+For the bounding boxes 1,90,100,100:
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 53
+i , j ; 32
+i , j ; 32
+i , j ; 115
+i , j ; 115
+i , j ; 255
+i , j ; 12
+i , j ; 127
+i , j ; 29
+i , j ; 128
+i , j ; 28
+i , j ; 4
+i , j ; 4
+i , j ; 5
+i , j ; 9
+i , j ; 1
+i , j ; 1
+i , j ; 58
+For the bounding boxes 40,30,70,60:
+i , j ; 2
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+For the bounding boxes 50,50,70,70:
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
+i , j ; 1
